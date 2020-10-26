@@ -164,3 +164,9 @@
 #video3 {
     margin-left: 10x;
 }
+li.success {
+    text-align: center;
+    font-size: 20px;
+    list-style-type: none;
+    font-weight: bold;
+}
