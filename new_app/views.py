@@ -224,10 +224,9 @@ def problem_solve(request):
         correct = False
         if(solution == answer):
             correct = True
-            messages.success(request, "Hooray you solved it.  Go to the next problem.")
+            messages.success(request, "Hooray you solved it.")
         elif(solution != answer):
-            correct = False
-            messages.success(request, "Try again!")
+            messages.success(request, f'Try again, the solution was {solution}')
         #request.session['is_correct'] = correct
         # errors = Problem.objects.problem_validator(request.session["is_correct"])
         # if len(errors) != 0:
