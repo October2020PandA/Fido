@@ -170,3 +170,26 @@ li.success {
     list-style-type: none;
     font-weight: bold;
 }
+#testimonials {
+    background-color: #ff5c0b;
+    padding-bottom: 20px;
+    
+}
+.testimonial {
+    width: 60%;
+    background-color: #fff;
+    text-align: center;
+    margin: 20px 200px 25px;
+    padding: 15px;
+    border: 2px solid black;
+    border-radius: 15%;
+    
+}
+#testimonals, h3 {
+    text-align: center;
+    color: #fff;
+}
+.p_or_t {
+    color: #ff5c0b;
+    border-top: 2px solid black;
+}
