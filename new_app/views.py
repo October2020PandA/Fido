@@ -198,7 +198,7 @@ def teacher_sent(request):
     context = {
         'teacher': Teacher.objects.get(id=request.session['teacher_id'])
     }    
-    return render(request, 'teacher_sent_messages.html', context)
+    return render(request, 'teacher_sent_message.html', context)
 
 
 def problem_solve(request):
