@@ -109,7 +109,7 @@ def student_mailbox(request):
     context = {
         'student': Student.objects.get(id=request.session['student_id'])
     }    
-    return render(request, 'student_mailbox.html', context)
+    return render(request, 'student_dashboard.html', context)
 
 def teacher_mailbox(request):
     if 'teacher_id' not in request.session:
@@ -198,7 +198,7 @@ def teacher_sent(request):
     context = {
         'teacher': Teacher.objects.get(id=request.session['teacher_id'])
     }    
-    return render(request, 'teacher_sent_message.html', context)
+    return render(request, 'teacher_sent.html', context)
 
 
 def problem_solve(request):
