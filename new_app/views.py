@@ -84,6 +84,7 @@ def student_dashboard(request):
     this_student = Student.objects.filter(id=request.session['student_id'])    
     context = {
         'Student': this_student[0],
+        'student': Student.objects.get(id=request.session['student_id'])
         
     }
     return render(request, 'student_dashboard.html', context)
